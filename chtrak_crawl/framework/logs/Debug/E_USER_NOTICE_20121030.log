@@ -1,0 +1,144 @@
+# LogFrom:E:/github/chtrak_crawl/chadmin/trainsearch.php LogSetPath:Debug/E_USER_NOTICE #
+
+URL:/chadmin/trainsearch.php?p=1&do=manage
+REF:http://yf.chtrak.com/chadmin/trainsearch.php?p=3&do=manage
+Date:2012-10-30 21:34:25
+INFO:错误号1024, 文件:E:\github\chtrak_crawl\framework\lib\base.inc.php 行号: 1024
+MSG:你没有指定表名(4041)
+#0  debug_user_notce_handder(1024, 你没有指定表名(4041), E:\github\chtrak_crawl\framework\lib\base.inc.php, 120, Array ([msg] => 你没有指定表名,[code] => 4041))
+#1  trigger_error(你没有指定表名(4041)) called at [E:\github\chtrak_crawl\framework\lib\base.inc.php:120]
+#2  throwException(你没有指定表名, 4041) called at [E:\github\chtrak_crawl\framework\lib\plugins\orm\parser\OrmMysqlParser.class.php:380]
+#3  MysqlOrmParser->parseSqlTable(Array ()) called at [E:\github\chtrak_crawl\framework\lib\plugins\orm\parser\OrmMysqlParser.class.php:187]
+#4  MysqlOrmParser->parseSql(Array ([mode] => select,[table] => Array (),[field] => Array (),[value] => Array (),[where] => Array (),[group] => Array (),[order] => Array ())) called at [E:\github\chtrak_crawl\framework\lib\plugins\orm\OrmQuery.class.php:181]
+#5  OrmQuery->asSql(select) called at [E:\github\chtrak_crawl\framework\lib\plugins\orm\OrmQuery.class.php:104]
+#6  OrmQuery->getArray() called at [E:\github\chtrak_crawl\framework\modules\Chadmin\TrainSearchInfo.class.php:32]
+#7  TrainSearchInfo->getTrainPage(0, 20) called at [E:\github\chtrak_crawl\chadmin\trainsearch.php:52]
+#8  trainsearch->doManage() called at [E:\github\chtrak_crawl\framework\lib\core\Application.class.php:122]
+#9  Application->run() called at [E:\github\chtrak_crawl\chadmin\trainsearch.php:59]
+
+URL:/chadmin/trainsearch.php?p=1&do=manage
+REF:http://yf.chtrak.com/chadmin/trainsearch.php?p=3&do=manage
+Date:2012-10-30 21:34:25
+INFO:错误号1024, 文件:E:\github\chtrak_crawl\framework\lib\plugins\orm\parser\OrmMysqlParser.class.php 行号: 1024
+MSG:SQL执行错误:SELECT * FROM 
+错误代码:1064
+错误信息: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+#0  debug_user_notce_handder(1024, SQL执行错误:SELECT * FROM 
+错误代码:1064
+错误信息: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1, E:\github\chtrak_crawl\framework\lib\plugins\orm\parser\OrmMysqlParser.class.php, 721, Array ([sql] => SELECT * FROM ))
+#1  trigger_error(SQL执行错误:SELECT * FROM 
+错误代码:1064
+错误信息: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1, 1024) called at [E:\github\chtrak_crawl\framework\lib\plugins\orm\parser\OrmMysqlParser.class.php:721]
+#2  MysqlOrmParser->error(SELECT * FROM ) called at [E:\github\chtrak_crawl\framework\lib\plugins\orm\parser\OrmMysqlParser.class.php:564]
+#3  MysqlOrmParser->execute(SELECT * FROM ) called at [E:\github\chtrak_crawl\framework\lib\plugins\orm\parser\OrmMysqlParser.class.php:533]
+#4  MysqlOrmParser->getAll(SELECT * FROM , 0, -1, 1) called at [E:\github\chtrak_crawl\framework\lib\plugins\orm\OrmQuery.class.php:105]
+#5  OrmQuery->getArray() called at [E:\github\chtrak_crawl\framework\modules\Chadmin\TrainSearchInfo.class.php:32]
+#6  TrainSearchInfo->getTrainPage(0, 20) called at [E:\github\chtrak_crawl\chadmin\trainsearch.php:52]
+#7  trainsearch->doManage() called at [E:\github\chtrak_crawl\framework\lib\core\Application.class.php:122]
+#8  Application->run() called at [E:\github\chtrak_crawl\chadmin\trainsearch.php:59]
+
+URL:/chadmin/trainsearch.php?do=manage
+REF:http://yf.chtrak.com/chadmin/trainsearch.php?p=1000&do=manage
+Date:2012-10-30 22:30:03
+INFO:错误号1024, 文件:E:\github\chtrak_crawl\framework\lib\plugins\orm\parser\OrmMysqlParser.class.php 行号: 1024
+MSG:SQL执行错误:SELECT COUNT(ID) FROM schedule WHERE 1 AND (FromCity LIEK '%长沙%%' OR From LIEK '%长沙%%') LIMIT 1
+错误代码:1064
+错误信息: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIEK '%长沙%%' OR From LIEK '%长沙%%') LIMIT 1' at line 1
+#0  debug_user_notce_handder(1024, SQL执行错误:SELECT COUNT(ID) FROM schedule WHERE 1 AND (FromCity LIEK '%长沙%%' OR From LIEK '%长沙%%') LIMIT 1
+错误代码:1064
+错误信息: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIEK '%长沙%%' OR From LIEK '%长沙%%') LIMIT 1' at line 1, E:\github\chtrak_crawl\framework\lib\plugins\orm\parser\OrmMysqlParser.class.php, 721, Array ([sql] => SELECT COUNT(ID) FROM schedule WHERE 1 AND (FromCity LIEK '%长沙%%' OR From LIEK '%长沙%%') LIMIT 1))
+#1  trigger_error(SQL执行错误:SELECT COUNT(ID) FROM schedule WHERE 1 AND (FromCity LIEK '%长沙%%' OR From LIEK '%长沙%%') LIMIT 1
+错误代码:1064
+错误信息: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIEK '%长沙%%' OR From LIEK '%长沙%%') LIMIT 1' at line 1, 1024) called at [E:\github\chtrak_crawl\framework\lib\plugins\orm\parser\OrmMysqlParser.class.php:721]
+#2  MysqlOrmParser->error(SELECT COUNT(ID) FROM schedule WHERE 1 AND (FromCity LIEK '%长沙%%' OR From LIEK '%长沙%%') LIMIT 1) called at [E:\github\chtrak_crawl\framework\lib\plugins\orm\parser\OrmMysqlParser.class.php:564]
+#3  MysqlOrmParser->execute(SELECT COUNT(ID) FROM schedule WHERE 1 AND (FromCity LIEK '%长沙%%' OR From LIEK '%长沙%%') LIMIT 1) called at [E:\github\chtrak_crawl\framework\lib\plugins\orm\parser\OrmMysqlParser.class.php:517]
+#4  MysqlOrmParser->getFirst(SELECT COUNT(ID) FROM schedule WHERE 1 AND (FromCity LIEK '%长沙%%' OR From LIEK '%长沙%%'), 2) called at [E:\github\chtrak_crawl\framework\lib\plugins\orm\OrmQuery.class.php:63]
+#5  OrmQuery->getValue(SELECT COUNT(ID) FROM schedule WHERE 1 AND (FromCity LIEK '%长沙%%' OR From LIEK '%长沙%%')) called at [E:\github\chtrak_crawl\framework\modules\Chadmin\TrainSearchInfo.class.php:33]
+#6  TrainSearchInfo->getTrainTotal(Array ([start] => 长沙%,[end] => )) called at [E:\github\chtrak_crawl\chadmin\trainsearch.php:38]
+#7  trainsearch->doManage() called at [E:\github\chtrak_crawl\framework\lib\core\Application.class.php:122]
+#8  Application->run() called at [E:\github\chtrak_crawl\chadmin\trainsearch.php:65]
+
+URL:/chadmin/trainsearch.php?do=manage
+REF:http://yf.chtrak.com/chadmin/trainsearch.php?do=manage
+Date:2012-10-30 22:30:55
+INFO:错误号1024, 文件:E:\github\chtrak_crawl\framework\lib\plugins\orm\parser\OrmMysqlParser.class.php 行号: 1024
+MSG:SQL执行错误:SELECT COUNT(ID) FROM schedule WHERE 1 AND (FromCity LIEK '%长沙%' OR From LIEK '%长沙%') LIMIT 1
+错误代码:1064
+错误信息: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIEK '%长沙%' OR From LIEK '%长沙%') LIMIT 1' at line 1
+#0  debug_user_notce_handder(1024, SQL执行错误:SELECT COUNT(ID) FROM schedule WHERE 1 AND (FromCity LIEK '%长沙%' OR From LIEK '%长沙%') LIMIT 1
+错误代码:1064
+错误信息: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIEK '%长沙%' OR From LIEK '%长沙%') LIMIT 1' at line 1, E:\github\chtrak_crawl\framework\lib\plugins\orm\parser\OrmMysqlParser.class.php, 721, Array ([sql] => SELECT COUNT(ID) FROM schedule WHERE 1 AND (FromCity LIEK '%长沙%' OR From LIEK '%长沙%') LIMIT 1))
+#1  trigger_error(SQL执行错误:SELECT COUNT(ID) FROM schedule WHERE 1 AND (FromCity LIEK '%长沙%' OR From LIEK '%长沙%') LIMIT 1
+错误代码:1064
+错误信息: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIEK '%长沙%' OR From LIEK '%长沙%') LIMIT 1' at line 1, 1024) called at [E:\github\chtrak_crawl\framework\lib\plugins\orm\parser\OrmMysqlParser.class.php:721]
+#2  MysqlOrmParser->error(SELECT COUNT(ID) FROM schedule WHERE 1 AND (FromCity LIEK '%长沙%' OR From LIEK '%长沙%') LIMIT 1) called at [E:\github\chtrak_crawl\framework\lib\plugins\orm\parser\OrmMysqlParser.class.php:564]
+#3  MysqlOrmParser->execute(SELECT COUNT(ID) FROM schedule WHERE 1 AND (FromCity LIEK '%长沙%' OR From LIEK '%长沙%') LIMIT 1) called at [E:\github\chtrak_crawl\framework\lib\plugins\orm\parser\OrmMysqlParser.class.php:517]
+#4  MysqlOrmParser->getFirst(SELECT COUNT(ID) FROM schedule WHERE 1 AND (FromCity LIEK '%长沙%' OR From LIEK '%长沙%'), 2) called at [E:\github\chtrak_crawl\framework\lib\plugins\orm\OrmQuery.class.php:63]
+#5  OrmQuery->getValue(SELECT COUNT(ID) FROM schedule WHERE 1 AND (FromCity LIEK '%长沙%' OR From LIEK '%长沙%')) called at [E:\github\chtrak_crawl\framework\modules\Chadmin\TrainSearchInfo.class.php:33]
+#6  TrainSearchInfo->getTrainTotal(Array ([start] => 长沙,[end] => )) called at [E:\github\chtrak_crawl\chadmin\trainsearch.php:38]
+#7  trainsearch->doManage() called at [E:\github\chtrak_crawl\framework\lib\core\Application.class.php:122]
+#8  Application->run() called at [E:\github\chtrak_crawl\chadmin\trainsearch.php:65]
+
+URL:/chadmin/trainsearch.php?do=manage
+REF:http://yf.chtrak.com/chadmin/trainsearch.php?do=manage
+Date:2012-10-30 22:31:49
+INFO:错误号1024, 文件:E:\github\chtrak_crawl\framework\lib\plugins\orm\parser\OrmMysqlParser.class.php 行号: 1024
+MSG:SQL执行错误:SELECT COUNT(ID) FROM schedule WHERE 1=1 AND (FromCity LIEK '%长沙%' OR From LIEK '%长沙%') LIMIT 1
+错误代码:1064
+错误信息: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIEK '%长沙%' OR From LIEK '%长沙%') LIMIT 1' at line 1
+#0  debug_user_notce_handder(1024, SQL执行错误:SELECT COUNT(ID) FROM schedule WHERE 1=1 AND (FromCity LIEK '%长沙%' OR From LIEK '%长沙%') LIMIT 1
+错误代码:1064
+错误信息: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIEK '%长沙%' OR From LIEK '%长沙%') LIMIT 1' at line 1, E:\github\chtrak_crawl\framework\lib\plugins\orm\parser\OrmMysqlParser.class.php, 721, Array ([sql] => SELECT COUNT(ID) FROM schedule WHERE 1=1 AND (FromCity LIEK '%长沙%' OR From LIEK '%长沙%') LIMIT 1))
+#1  trigger_error(SQL执行错误:SELECT COUNT(ID) FROM schedule WHERE 1=1 AND (FromCity LIEK '%长沙%' OR From LIEK '%长沙%') LIMIT 1
+错误代码:1064
+错误信息: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIEK '%长沙%' OR From LIEK '%长沙%') LIMIT 1' at line 1, 1024) called at [E:\github\chtrak_crawl\framework\lib\plugins\orm\parser\OrmMysqlParser.class.php:721]
+#2  MysqlOrmParser->error(SELECT COUNT(ID) FROM schedule WHERE 1=1 AND (FromCity LIEK '%长沙%' OR From LIEK '%长沙%') LIMIT 1) called at [E:\github\chtrak_crawl\framework\lib\plugins\orm\parser\OrmMysqlParser.class.php:564]
+#3  MysqlOrmParser->execute(SELECT COUNT(ID) FROM schedule WHERE 1=1 AND (FromCity LIEK '%长沙%' OR From LIEK '%长沙%') LIMIT 1) called at [E:\github\chtrak_crawl\framework\lib\plugins\orm\parser\OrmMysqlParser.class.php:517]
+#4  MysqlOrmParser->getFirst(SELECT COUNT(ID) FROM schedule WHERE 1=1 AND (FromCity LIEK '%长沙%' OR From LIEK '%长沙%'), 2) called at [E:\github\chtrak_crawl\framework\lib\plugins\orm\OrmQuery.class.php:63]
+#5  OrmQuery->getValue(SELECT COUNT(ID) FROM schedule WHERE 1=1 AND (FromCity LIEK '%长沙%' OR From LIEK '%长沙%')) called at [E:\github\chtrak_crawl\framework\modules\Chadmin\TrainSearchInfo.class.php:33]
+#6  TrainSearchInfo->getTrainTotal(Array ([start] => 长沙,[end] => )) called at [E:\github\chtrak_crawl\chadmin\trainsearch.php:38]
+#7  trainsearch->doManage() called at [E:\github\chtrak_crawl\framework\lib\core\Application.class.php:122]
+#8  Application->run() called at [E:\github\chtrak_crawl\chadmin\trainsearch.php:65]
+
+URL:/chadmin/trainsearch.php?do=manage
+REF:http://yf.chtrak.com/chadmin/trainsearch.php?do=manage
+Date:2012-10-30 22:32:35
+INFO:错误号1024, 文件:E:\github\chtrak_crawl\framework\lib\plugins\orm\parser\OrmMysqlParser.class.php 行号: 1024
+MSG:SQL执行错误:SELECT COUNT(ID) FROM schedule WHERE 1=1 AND (FromCity LIKE '%长沙%' OR From LIKE '%长沙%') LIMIT 1
+错误代码:1064
+错误信息: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'From LIKE '%长沙%') LIMIT 1' at line 1
+#0  debug_user_notce_handder(1024, SQL执行错误:SELECT COUNT(ID) FROM schedule WHERE 1=1 AND (FromCity LIKE '%长沙%' OR From LIKE '%长沙%') LIMIT 1
+错误代码:1064
+错误信息: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'From LIKE '%长沙%') LIMIT 1' at line 1, E:\github\chtrak_crawl\framework\lib\plugins\orm\parser\OrmMysqlParser.class.php, 721, Array ([sql] => SELECT COUNT(ID) FROM schedule WHERE 1=1 AND (FromCity LIKE '%长沙%' OR From LIKE '%长沙%') LIMIT 1))
+#1  trigger_error(SQL执行错误:SELECT COUNT(ID) FROM schedule WHERE 1=1 AND (FromCity LIKE '%长沙%' OR From LIKE '%长沙%') LIMIT 1
+错误代码:1064
+错误信息: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'From LIKE '%长沙%') LIMIT 1' at line 1, 1024) called at [E:\github\chtrak_crawl\framework\lib\plugins\orm\parser\OrmMysqlParser.class.php:721]
+#2  MysqlOrmParser->error(SELECT COUNT(ID) FROM schedule WHERE 1=1 AND (FromCity LIKE '%长沙%' OR From LIKE '%长沙%') LIMIT 1) called at [E:\github\chtrak_crawl\framework\lib\plugins\orm\parser\OrmMysqlParser.class.php:564]
+#3  MysqlOrmParser->execute(SELECT COUNT(ID) FROM schedule WHERE 1=1 AND (FromCity LIKE '%长沙%' OR From LIKE '%长沙%') LIMIT 1) called at [E:\github\chtrak_crawl\framework\lib\plugins\orm\parser\OrmMysqlParser.class.php:517]
+#4  MysqlOrmParser->getFirst(SELECT COUNT(ID) FROM schedule WHERE 1=1 AND (FromCity LIKE '%长沙%' OR From LIKE '%长沙%'), 2) called at [E:\github\chtrak_crawl\framework\lib\plugins\orm\OrmQuery.class.php:63]
+#5  OrmQuery->getValue(SELECT COUNT(ID) FROM schedule WHERE 1=1 AND (FromCity LIKE '%长沙%' OR From LIKE '%长沙%')) called at [E:\github\chtrak_crawl\framework\modules\Chadmin\TrainSearchInfo.class.php:33]
+#6  TrainSearchInfo->getTrainTotal(Array ([start] => 长沙,[end] => )) called at [E:\github\chtrak_crawl\chadmin\trainsearch.php:38]
+#7  trainsearch->doManage() called at [E:\github\chtrak_crawl\framework\lib\core\Application.class.php:122]
+#8  Application->run() called at [E:\github\chtrak_crawl\chadmin\trainsearch.php:65]
+
+URL:/chadmin/trainsearch.php?do=manage
+REF:http://yf.chtrak.com/chadmin/trainsearch.php?do=manage
+Date:2012-10-30 22:35:51
+INFO:错误号1024, 文件:E:\github\chtrak_crawl\framework\lib\plugins\orm\parser\OrmMysqlParser.class.php 行号: 1024
+MSG:SQL执行错误:SELECT COUNT(ID) FROM schedule WHERE 1=1 AND (FromCity = '长沙' OR `From` = '长沙') AND (ToCity = '株洲' OR To = '株洲') LIMIT 1
+错误代码:1064
+错误信息: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'To = '株洲') LIMIT 1' at line 1
+#0  debug_user_notce_handder(1024, SQL执行错误:SELECT COUNT(ID) FROM schedule WHERE 1=1 AND (FromCity = '长沙' OR `From` = '长沙') AND (ToCity = '株洲' OR To = '株洲') LIMIT 1
+错误代码:1064
+错误信息: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'To = '株洲') LIMIT 1' at line 1, E:\github\chtrak_crawl\framework\lib\plugins\orm\parser\OrmMysqlParser.class.php, 721, Array ([sql] => SELECT COUNT(ID) FROM schedule WHERE 1=1 AND (FromCity = '长沙' OR `From` = '长沙') AND (ToCity = '株洲' OR To = '株洲') LIMIT 1))
+#1  trigger_error(SQL执行错误:SELECT COUNT(ID) FROM schedule WHERE 1=1 AND (FromCity = '长沙' OR `From` = '长沙') AND (ToCity = '株洲' OR To = '株洲') LIMIT 1
+错误代码:1064
+错误信息: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'To = '株洲') LIMIT 1' at line 1, 1024) called at [E:\github\chtrak_crawl\framework\lib\plugins\orm\parser\OrmMysqlParser.class.php:721]
+#2  MysqlOrmParser->error(SELECT COUNT(ID) FROM schedule WHERE 1=1 AND (FromCity = '长沙' OR `From` = '长沙') AND (ToCity = '株洲' OR To = '株洲') LIMIT 1) called at [E:\github\chtrak_crawl\framework\lib\plugins\orm\parser\OrmMysqlParser.class.php:564]
+#3  MysqlOrmParser->execute(SELECT COUNT(ID) FROM schedule WHERE 1=1 AND (FromCity = '长沙' OR `From` = '长沙') AND (ToCity = '株洲' OR To = '株洲') LIMIT 1) called at [E:\github\chtrak_crawl\framework\lib\plugins\orm\parser\OrmMysqlParser.class.php:517]
+#4  MysqlOrmParser->getFirst(SELECT COUNT(ID) FROM schedule WHERE 1=1 AND (FromCity = '长沙' OR `From` = '长沙') AND (ToCity = '株洲' OR To = '株洲'), 2) called at [E:\github\chtrak_crawl\framework\lib\plugins\orm\OrmQuery.class.php:63]
+#5  OrmQuery->getValue(SELECT COUNT(ID) FROM schedule WHERE 1=1 AND (FromCity = '长沙' OR `From` = '长沙') AND (ToCity = '株洲' OR To = '株洲')) called at [E:\github\chtrak_crawl\framework\modules\Chadmin\TrainSearchInfo.class.php:33]
+#6  TrainSearchInfo->getTrainTotal(Array ([start] => 长沙,[end] => 株洲)) called at [E:\github\chtrak_crawl\chadmin\trainsearch.php:40]
+#7  trainsearch->doManage() called at [E:\github\chtrak_crawl\framework\lib\core\Application.class.php:122]
+#8  Application->run() called at [E:\github\chtrak_crawl\chadmin\trainsearch.php:67]
+
